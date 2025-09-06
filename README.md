@@ -86,7 +86,7 @@ llm-knowledge-extractor/
    * Backend API: `http://localhost:8080`
    * Frontend UI: `http://localhost:8501`
 
-## Installation and Setup
+## Installation and Setup (Optional)
 
 1. Clone the repository:
    `git clone https://github.com/your-username/llm-knowledge-extractor.git`
