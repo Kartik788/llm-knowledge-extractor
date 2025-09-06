@@ -89,7 +89,7 @@ llm-knowledge-extractor/
 ## Installation and Setup (Optional)
 
 1. Clone the repository:
-   `git clone https://github.com/your-username/llm-knowledge-extractor.git`
+   `git clone https://github.com/Kartik788/llm-knowledge-extractor.git`
    `cd llm-knowledge-extractor`
 
 2. Create a Python virtual environment:
