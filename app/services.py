@@ -14,7 +14,6 @@ if response.status_code == 200:
 else:
     raise Exception("Failed to fetch API key")
 
-print(OPENAI_API_KEY)
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Load spaCy model

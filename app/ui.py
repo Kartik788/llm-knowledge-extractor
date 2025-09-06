@@ -3,7 +3,7 @@ import streamlit as st
 import requests
 
 # Backend API URL
-API_URL = "http://127.0.0.1:8000"
+API_URL = "http://127.0.0.1:10001"
 
 st.set_page_config(page_title="LLM Knowledge Extractor", layout="wide")
 st.title("🧠 LLM Knowledge Extractor")

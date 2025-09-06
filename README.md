@@ -83,7 +83,7 @@ llm-knowledge-extractor/
 
 2. Access the app:
 
-   * Backend API: `http://localhost:8080`
+   * Backend API: `http://localhost:10001`
    * Frontend UI: `http://localhost:8501`
 
 ## Installation and Setup (Optional)
@@ -106,13 +106,10 @@ llm-knowledge-extractor/
 4. Install dependencies:
    `pip install -r requirements.txt`
 
-5. Set OpenAI API key:
-   `setx OPENAI_API_KEY "your_openai_api_key_here"`
+5. Run backend server:
+   `uvicorn app.main:app --reload --port 10001`
 
-6. Run backend server:
-   `uvicorn app.main:app --reload --port 8080`
-
-7. Run frontend UI:
+6. Run frontend UI:
    `streamlit run app/ui.py`
 
 
