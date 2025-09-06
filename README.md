@@ -46,7 +46,7 @@ LLM Knowledge Extractor is a full-stack web application that leverages Large Lan
 * SQLite – Lightweight database for storing analyses
 * OpenAI API – For text analysis using GPT models
 * SpaCy – For keyword extraction
-* Python 3.12 – Main programming language
+* Python 3.13 – Main programming language
 
 **Frontend:**
 
