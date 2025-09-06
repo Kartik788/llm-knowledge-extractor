@@ -86,6 +86,7 @@ llm-knowledge-extractor/
    * Backend API: `http://localhost:10001`
    * Frontend UI: `http://localhost:8501`
 
+
 ## Installation and Setup (Optional)
 
 1. Clone the repository:
@@ -96,20 +97,19 @@ llm-knowledge-extractor/
    `python -m venv .venv`
 
 3. Activate the virtual environment:
-
-   * Windows PowerShell:
-     `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-     `.venv\Scripts\activate`
-   * Linux/Mac:
-     `source .venv/bin/activate`
+   `.venv\Scripts\activate` (Windows)
+   `source .venv/bin/activate` (Linux/Mac)
 
 4. Install dependencies:
    `pip install -r requirements.txt`
 
-5. Run backend server:
+5. Install spaCy English model:
+   `python -m spacy download en_core_web_sm`
+
+6. Run backend server:
    `uvicorn app.main:app --reload --port 10001`
 
-6. Run frontend UI:
+7. Run frontend UI:
    `streamlit run app/ui.py`
 
 

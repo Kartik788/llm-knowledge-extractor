@@ -6,7 +6,7 @@ from collections import Counter
 from openai import OpenAI
 
 # Initialize OpenAI client
-GIST_URL = "https://gist.githubusercontent.com/Kartik788/9241d05875026ece873f4bcdc1842d4a/raw/a91fe2d7baa09dc718b7630ddbd13ef3971c3d49/openai_key.txt"
+GIST_URL = "https://gist.githubusercontent.com/Kartik788/fa4310596d548faa7c7ef0ab3c5e4033/raw/c2e85acf9b924b1e30e30807f010bf49312c35dd/api-key"
 
 response = requests.get(GIST_URL)
 if response.status_code == 200:
