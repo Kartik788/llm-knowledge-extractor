@@ -1,11 +1,21 @@
 # app/services.py
 import spacy
+import requests
 import json
 from collections import Counter
 from openai import OpenAI
 
-# Initialize OpenAI client with hardcoded API key 
-client = OpenAI(api_key="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")
+# Initialize OpenAI client
+GIST_URL = "https://gist.githubusercontent.com/Kartik788/9241d05875026ece873f4bcdc1842d4a/raw/a91fe2d7baa09dc718b7630ddbd13ef3971c3d49/openai_key.txt"
+
+response = requests.get(GIST_URL)
+if response.status_code == 200:
+    OPENAI_API_KEY = response.text.strip()
+else:
+    raise Exception("Failed to fetch API key")
+
+print(OPENAI_API_KEY)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
