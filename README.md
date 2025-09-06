@@ -76,6 +76,15 @@ llm-knowledge-extractor/
 ├─ requirements.txt     # All Python dependencies
 └─ README.md
 ```
+## Running with Docker (Recommended)
+
+1. Build and run using Docker Compose:
+   `docker-compose up --build`
+
+2. Access the app:
+
+   * Backend API: `http://localhost:8080`
+   * Frontend UI: `http://localhost:8501`
 
 ## Installation and Setup
 
@@ -105,16 +114,6 @@ llm-knowledge-extractor/
 
 7. Run frontend UI:
    `streamlit run app/ui.py`
-
-## Running with Docker
-
-1. Build and run using Docker Compose:
-   `docker-compose up --build`
-
-2. Access the app:
-
-   * Backend API: `http://localhost:8080`
-   * Frontend UI: `http://localhost:8501`
 
 
 ## Screenshots
